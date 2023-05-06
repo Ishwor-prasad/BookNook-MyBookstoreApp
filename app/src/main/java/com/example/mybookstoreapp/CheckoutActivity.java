@@ -65,7 +65,7 @@ public class CheckoutActivity extends BaseActivity {
                     divider.setDrawable(getDrawable(R.drawable.gradient_divider));
                     rv.addItemDecoration(divider);
 
-                    ((TextView) findViewById(R.id.totalFee)).setText(total + " L.E.");
+                    ((TextView) findViewById(R.id.totalFee)).setText(total + " Tk");
 
                 }
             }
@@ -75,8 +75,7 @@ public class CheckoutActivity extends BaseActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // akid lazem yeb2a fi hena kalam ya5od el input ba2a w y7oto fl database w yfadi el cart kman
-                // w tab3an yet2aked en mafi4 baynat na2sa..
+
 
                 Intent i = new Intent(CheckoutActivity.this, CheckoutDoneActivity.class);
                 startActivity(i);
